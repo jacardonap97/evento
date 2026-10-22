@@ -10,52 +10,17 @@
     <!-- Link de libreria de iconos-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer">
 
-
-    <style>
-        #hexagono {
-            width: 50px;
-            height: 50px; 
-            background-color: red;
-  
-            /* Fórmula de recorte por porcentajes (Vértice hacia arriba) */
-            clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
-
-            /*Hace que el hexágono flote y permita texto al lado */
-            display: inline-block;
-            margin-right: 15px;
-            vertical-align: middle;
-        }
-
-        #imagen-hexagono{
-            width: 130px;
-            height: 130px;
-            object-fit: cover; /*Para que no se estire la imagen*/
-            clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
-        }
-
-        #iconos-hexagonos{
-            width: 25px;
-            height: 25px;
-            object-fit: cover; /*Para que no se estire la imagen*/
-            clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
-        }
-
-        #user{
-            display: block;
-            margin-left: auto;
-            margin-right: auto;
-
-            margin-top: 10px;
-        }
-    </style>
 </head>
 
 <body>
-    <marquee >Bienvenidos a esta gran conferencia, con expertos de talla internacional</marquee>
-    <p> 
-        <div id="hexagono"> 
+    <div class="marquesina" >
+        <marquee>Bienvenidos a esta gran conferencia, con expertos de talla internacional</marquee>
+    </div>
+    
+    <p class="titulo"> 
+        <span id="hexagono"> 
             <img id="user" src="img/user.png" alt="" width="30px" height="30px"> 
-        </div> 
+        </span> 
         <strong>CONFERENCISTAS </strong> / Conoce a los expertos
     </p>
 
@@ -63,8 +28,8 @@
         <tr>
             <td align="center">
                  <img id="imagen-hexagono" src="img/Alejandro.jpg" alt="Alejandro Morales"><br>
-                Alejandro Morales <br>
-                Director de Contenido <br>
+                <h4>Alejandro Morales </h4>
+                <h5>Director de Contenido</h5>
                 <p>
                     Especializado en generar leads <br>
                     a través de estrategias de <br>
@@ -78,8 +43,8 @@
             </td>
             <td align="center">
                 <img id="imagen-hexagono" src="img/Carolina.jpg" alt="Carolina Fernández"><br>
-                Carolina Fernández <br>
-                Co-Fundadora
+                <h4>Carolina Fernández</h4>
+                <h5>Co-Fundadora</h5>
                 <p>
                     Experta en estrategias de redes <br>
                     sociales para impulsar el <br>
@@ -92,8 +57,8 @@
             </td>
             <td align="center">
                 <img id="imagen-hexagono" src="img/David.jpg" alt="David Gómez"><br>
-                David Gómez <br>
-                Influencer Marketing Manager
+                <h4>David Gómez</h4>
+                <h5>Influencer Marketing Manager</h5>
                 <p>
                     Colaboraciones estratégicas <br>
                     con influencers para <br>
@@ -106,8 +71,8 @@
             </td>
             <td align="center">
                 <img id="imagen-hexagono" src="img/Martin.jpg" alt="Martín Vargas"><br>
-                Martín Vargas <br>
-                Director de Automatización
+                <h4>Martín Vargas</h4>
+                <h5>Director de Automatización</h5>
                 <p>
                     Optimiza la generación y <br>
                     seguimiento de prospectos <br>
@@ -120,5 +85,6 @@
             </td>
         </tr>
     </table>
+    <button></button>
 </body>
 </html>

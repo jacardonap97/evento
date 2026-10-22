@@ -1,3 +1,4 @@
+/*cuando el elemento se escribe tal cual, identifican los elementos normales*/
 table {
   margin-top: 40px; 
 }
@@ -12,4 +13,73 @@ td p {
 
 button{
     margin: 4px;
+}
+
+h4{
+    color: black;
+    margin: 4px;
+}
+
+h5{
+    color: red;
+    margin: 4px;
+}
+
+table p{
+    color: grey;
+}
+
+body {
+    margin: 0;
+    padding: 30px 50px;
+    overflow-x: hidden;
+}   
+
+/*los . identifican las clases*/
+.titulo{
+    font-size: 1.2rem;
+}
+
+.marquesina {
+  width: 100vw;
+  margin-left: -50px;
+  margin-top: -30px;
+  background-color: red;
+}    
+ 
+
+/* los # idendifican ID */
+#hexagono {
+    width: 50px;
+    height: 50px; 
+    background-color: red;
+  
+    /* Fórmula de recorte por porcentajes (Vértice hacia arriba) */
+    clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+
+    /*Hace que el hexágono flote y permita texto al lado */
+    display: inline-block;
+    margin-right: 15px;
+    vertical-align: middle; 
+}
+
+#imagen-hexagono{
+    width: 130px;
+    height: 130px;
+    object-fit: cover; /*Para que no se estire la imagen*/
+    clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+}
+
+#iconos-hexagonos{
+    width: 25px;
+    height: 25px;
+    object-fit: cover; /*Para que no se estire la imagen*/
+    clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+}
+
+#user{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
 }
