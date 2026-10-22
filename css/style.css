@@ -1,0 +1,15 @@
+table {
+  margin-top: 40px; 
+}
+
+td {
+  padding: 20px;  /* ← 15px en todos los lados (arriba, abajo, izquierda, derecha) */
+}   
+
+td p {
+  margin-bottom: 15px;    /* ← separa la descripción del botón */
+}
+
+button{
+    margin: 4px;
+}
